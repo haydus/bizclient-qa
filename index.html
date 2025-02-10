@@ -11,8 +11,8 @@
 		<link rel="preconnect" href="https://storage.googleapis.com" />
 
 		<meta name="description" content="BEL end users client" />
-		<link rel="icon" href="/favicon.jpg" type="image/jpeg" />
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+		<link rel="icon" href="/brand/favicon.jpg" type="image/jpeg" />
+		<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png" sizes="180x180" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="mobile-web-app-capable" content="yes" />
 		<meta name="theme-color" content="#ffffff" />
@@ -21,7 +21,7 @@
 		<meta property="og:title" content="Biz Client" data-react-helmet="true" />
 		<meta property="og:description" content="BEL end users client" data-react-helmet="true" />
 		<meta property="og:url" content="https://bizsense.co.il" data-react-helmet="true" />
-		<meta property="og:image" content="/pwa-512x512.png" data-react-helmet="true" />
+		<meta property="og:image" content="/brand/pwa-512x512.png" data-react-helmet="true" />
 		<meta name="twitter:card" content="summary" data-react-helmet="true" />
 
 		<!-- https://web.dev/defer-non-critical-css/ -->
@@ -31,15 +31,22 @@
 			as="style"
 			onload="this.onload=null;this.rel='stylesheet'"
 		/>
+		<style src="/brand/theme.css"></style>
 		<style>
-			/* styles.css */
+			:root {
+				--primary-color: #02027d;
+				--secondary-color: #4b219f;
+				--background-color: #ffffff;
+				--paper-color: #eae3f3;
+			}
+
 			.pwa-splash-screen {
 				position: fixed;
 				top: 0;
 				left: 0;
 				right: 0;
 				bottom: 0;
-				background: #ffffff;
+				background: var(--background-color);
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -68,11 +75,11 @@
 				user-select: none;
 			}
 		</style>
-		<script type="module" crossorigin src="/assets/index-fmDjTuCS.js"></script>
-	<link rel="manifest" href="/manifest.webmanifest"></head>
+		<script type="module" crossorigin src="/assets/index-HF0tyXhM.js"></script>
+	<link rel="manifest" href="/brand/manifest.json"></head>
 	<body ontouchstart>
 		<div class="pwa-splash-screen">
-			<img src="/pwa-512x512.png" alt="Loading" width="128" />
+			<img src="/brand/pwa-512x512.png" alt="Loading" width="128" />
 		</div>
 		<div id="root"></div>
 	</body>
