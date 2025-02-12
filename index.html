@@ -18,7 +18,7 @@
 		<meta name="theme-color" content="#ffffff" />
 
 		<meta name="description" content="BEL end users client" data-react-helmet="true" />
-		<meta property="og:title" content="Biz Client" data-react-helmet="true" />
+		<meta property="og:title" content="BEL Client" data-react-helmet="true" />
 		<meta property="og:description" content="BEL end users client" data-react-helmet="true" />
 		<meta property="og:url" content="https://bizsense.co.il" data-react-helmet="true" />
 		<meta property="og:image" content="/brand/pwa-512x512.png" data-react-helmet="true" />
@@ -32,6 +32,19 @@
 			onload="this.onload=null;this.rel='stylesheet'"
 		/>
 		<style src="/brand/theme.css"></style>
+		<script id="app-config" type="application/json">
+			{
+				"baseUrl": "https://biznese.co.il/",
+				"bizId": "2",
+				"title": "בדיקה",
+				"appLang": "he",
+				"logLevel": "debug",
+				"paymentLink": "https://biznese.co.il/Default.aspx?pay_doc_guid={guid}",
+				"invoiceDownloadLink": "https://biznese.co.il/getDocuemnt.aspx?pdf=true&guid={guid}",
+				"changePaymentLink": "https://biznese.co.il/online_item.aspx?account_guid={account_guid}&biz_id={biz_id}&just_save_token=1",
+				"currencyCode": "ILS"
+			}
+		</script>
 		<style>
 			:root {
 				--primary-color: #02027d;
@@ -75,7 +88,7 @@
 				user-select: none;
 			}
 		</style>
-		<script type="module" crossorigin src="/assets/index-HF0tyXhM.js"></script>
+		<script type="module" crossorigin src="/assets/index-EV7UHq-P.js"></script>
 	<link rel="manifest" href="/brand/manifest.json"></head>
 	<body ontouchstart>
 		<div class="pwa-splash-screen">
